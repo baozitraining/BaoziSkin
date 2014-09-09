@@ -4,25 +4,50 @@
 {% block meta_title %}{% trans "Home" %}{% endblock %}
 {% block title %}{% trans "Home" %}{% endblock %}
 
-{% block breadcrumb_menu %}
-<li class="active">{% trans "Home" %}</li>
-{% endblock %}
-
 {% block main %}
 {% blocktrans %}
-<h2>Congratulations!</h2>
-<p>
-    Welcome to your new Mezzanine powered website.
-    Here are some quick links to get you started:
-</p>
-<ul>
-    <li><a href="/admin/">Log in to the admin interface</a></li>
-    <li><a href="http://mezzanine.jupo.org/docs/content-architecture.html">Creating custom page types</a></li>
-    <li><a href="http://mezzanine.jupo.org/docs/frequently-asked-questions.html#templates">Modifying HTML templates</a></li>
-    <li><a href="http://mezzanine.jupo.org/docs/frequently-asked-questions.html#why-isn-t-the-homepage-a-page-object-i-can-edit-via-the-admin">Changing this homepage</a></li>
-    <li><a href="http://mezzanine.jupo.org/docs/frequently-asked-questions.html">Other frequently asked questions</a></li>
-    <li><a href="http://mezzanine.jupo.org/docs/configuration.html#default-settings">Full list of settings</a></li>
-    <li><a href="http://mezzanine.jupo.org/docs/deployment.html">Deploying to a production server</a></li>
-</ul>
+<p><a class="btn btn-warning btn-lg btn-block" href="#">Things you should know</a></p>
+<p></p>
+<div class="homepage-bg">
+<div class="col-md-8 left">
+<div align="center" class="videoWrapper">
+<iframe width="600" height="400" src="http://www.youtube.com/embed/9_jzHW7tF14" frameborder="0" allowfullscreen=""></iframe>
+</div>
+</div>
+<div class="col-md-4 right">
+<div class="homepage-calendar">
+<table class="table table-striped table-hover ">
+  <thead>
+    <tr>
+      <th>校园行</th>
+      <th>第四期</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Time</td>
+      <td>Oct 12 @ 3pm~5pm</td>
+    </tr>
+    <tr class="success">
+      <td>Place</td>
+      <td>UW campus, classroom TBD</td>
+    </tr>
+    <tr class="danger">
+      <td>Speaker</td>
+      <td>Xiaoyu Shi, Xiao Liang, Leon Liu</td>
+    </tr>
+    <tr class="warning">
+      <td>Topic</td>
+      <td>Want a job? Come and you'll never regret!</td>
+    </tr>
+    <tr class="active">
+      <td>Bounus</td>
+      <td>Stay tuned!</td>
+    </tr>
+  </tbody>
+</table> 
+</div>
+</div>
+</div>
 {% endblocktrans %}
 {% endblock %}
