@@ -68,6 +68,15 @@
 </div>
 <div class="navbar-collapse collapse">
     {% search_form "all" %}
+  <ul class="nav navbar-nav">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Product <b class="caret"></b></a>
+      <ul class="dropdown-menu">
+        <li><a href="/mockinterview">模拟面试</a></li>
+        <li><a href="#">家教式辅导</a></li>
+      </ul>
+    </li>
+  </ul>
     {% page_menu "pages/menus/dropdown.html" %}
 </div>
 </div>
@@ -97,19 +106,19 @@
 <div class="container">
 <div class="row">
 
-<!-- comment out left block
-<div class="col-md-1 left">
+<div class="col-md-0 left">
+<!-- comment out right block
     {% block left_panel %}
     <div class="panel panel-default tree">{% page_menu "pages/menus/tree.html" %}</div>
     {% endblock %}
-</div>
 -->
+</div>
 
-<div class="col-md-11 middle">
+<div class="col-md-12 middle">
     {% block main %}{% endblock %}
 </div>
 
-<div class="col-md-1 right">
+<div class="col-md-0 right">
 <!-- comment out right block
     {% nevercache %}
     {% include "includes/user_panel.html" %}

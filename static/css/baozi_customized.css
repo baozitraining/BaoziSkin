@@ -8,11 +8,11 @@
 }
 
 .team-member .profile-picture {
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
+	webkit-border-radius: 50%;
+	moz-border-radius: 50%;
 	border-radius: 50%;
-	-moz-background-clip: border;
-	-webkit-background-clip: border-box;
+	moz-background-clip: border;
+	webkit-background-clip: border-box;
 	background-clip: border-box;
 	overflow: hidden;
 	max-width: 100px;
@@ -47,12 +47,12 @@ figure {
 .stamp img {
 	height: 100px;
 	padding-left: 150px;
-	padding-top: 15px;
+	padding-top: 0px;
 	transform:rotate(-15deg);
-	-ms-transform:rotate(-15deg); 	/* IE 9 */
-	-moz-transform:rotate(-15deg); 	/* Firefox */
-	-webkit-transform:rotate(-15deg); /* Safari 和 Chrome */
-	-o-transform:rotate(-15deg);
+	ms-transform:rotate(-15deg); 	/* IE 9 */
+	moz-transform:rotate(-15deg); 	/* Firefox */
+	webkit-transform:rotate(-15deg); /* Safari 和 Chrome */
+	o-transform:rotate(-15deg);
 }
 
 .videoWrapper {
@@ -66,4 +66,117 @@ figure {
 	width: 100%;
 	background:-webkit-linear-gradient(#fff, #eee 50%,#ddd); 
 	background:url(../static/media/util/bg.jpg) no-repeat 95% 50%; 
+}
+
+.homepage-body {
+	position: relative;
+	background-color: #f9faf7;
+	height: 100%;
+}
+.homepage-banner-container {
+	width: 100%;
+	background-color: #000;
+	height: 320px;
+	position: relative;
+}
+.homepage-hero-banner {
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 95%;
+	height: 100%;
+	max-height: 320px;
+	position: relative;
+	-webkit-box-shadow: inset 50px 0 120px -20px #000,inset 50px 0 120px -40px #000,inset -50px 0 120px -20px #000,inset -50px 0 120px -40px #000,inset 0 10px 10px -10px #000,inset 0 -10px 10px -10px #000;
+	box-shadow: inset 50px 0 120px -20px #000,inset 50px 0 120px -40px #000,inset -50px 0 120px -20px #000,inset -50px 0 120px -40px #000,inset 0 10px 10px -10px #000,inset 0 -10px 10px -10px #000;
+	margin: 0 auto
+}
+.homepage-front-banner-container {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	padding: 0 30px;
+}
+.homepage-front-banner-main-group {
+	position: relative;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	top: 16px;
+}
+.homepage-front-banner-tagline {
+	display: block;
+	font-size: 36px;
+	line-height: 1.1em;
+	color: #fff;
+	position: relative;
+	height: 100%;
+	max-width: 15em;
+	text-shadow: 0 0 24px rgba(0,0,0,0.5),0 0 64px rgba(0,0,0,0.25),0 2px rgba(0,0,0,0.75);
+}
+.homepage-front-banner-hide2 {
+	margin-top: 150px;
+	display: block;
+}
+.homepage-front-banner-join {
+	display: block;
+	position: relative;
+	color: #fff;
+	padding: 10px 0;
+	font-size: 21px;
+	line-height: 1.3em;
+	text-shadow: 0 0 12px rgba(0,0,0,0.5),0 0 32px rgba(0,0,0,0.25),0 1px rgba(0,0,0,0.75);
+}
+.internal-about {
+	color: #ff0;
+}
+
+.card-image {
+  	text-align: center;
+	margin-bottom: 0;
+	overflow: hidden;
+}
+
+.card-image a {
+	text-decoration: none;
+	cursor: pointer;
+	color: #0367b0;
+}
+.card-image img {
+	background-size:cover;
+}
+
+.card-detail {
+	margin-top: 8px;
+}
+.card-detail a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.product-page-canvas {
+	margin-top: 15px;
+	webkit-box-sizing: border-box;
+	moz-box-sizing: border-box;
+	box-sizing: border-box;
+	webkit-box-shadow: 0 1px 2px 1px rgba(0,0,0,0.25);
+	box-shadow: 0 1px 2px 1px rgba(0,0,0,0.25);
+	background-color: #fff;
+	webkit-border-radius: 1px;
+	border-radius: 1px;
+	padding: 30px 30px 48px 30px;
+	margin-left: -3.1914895%;
+	width: 100%;
+	height: 1100px;
+}
+
+.product-page-canvas hr {
+	display: block;
+	-webkit-margin-before: 0.5em;
+	-webkit-margin-after: 0.5em;
+	-webkit-margin-start: auto;
+	-webkit-margin-end: auto;
+	border-style: inset;
+	border-width: 1px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }

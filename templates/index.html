@@ -6,48 +6,47 @@
 
 {% block main %}
 {% blocktrans %}
-<p><a class="btn btn-warning btn-lg btn-block" href="#">Things you should know</a></p>
-<p></p>
-<div class="homepage-bg">
-<div class="col-md-8 left">
-<div align="center" class="videoWrapper">
-<iframe width="600" height="400" src="http://www.youtube.com/embed/9_jzHW7tF14" frameborder="0" allowfullscreen=""></iframe>
+<div class="homepage-body">
+<!-- banner image --!>
+<div class="homepage-banner-container">
+<div style="background-image: url('{{ MEDIA_URL }}util/bg.jpg')" class="homepage-hero-banner"></div>
+<div class="homepage-front-banner-container">
+	<div class="homepage-front-banner-main-group">
+	<h1 class="homepage-front-banner-tagline">找工作，包子和你在一起</h1>
+	<div class="homepage-front-banner-hide2">
+		<div class="homepage-front-banner-join">北美顶尖公司工程师与你面对面交流，提供最真实的模拟面试服务!<br><a href="/mockinterview" class="internal-about">How it works »</a></div>
+</div></div></div>
 </div>
-</div>
-<div class="col-md-4 right">
-<div class="homepage-calendar">
-<table class="table table-striped table-hover ">
-  <thead>
-    <tr>
-      <th>校园行</th>
-      <th>第四期</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="info">
-      <td>Time</td>
-      <td>Oct 12 @ 3pm~5pm</td>
-    </tr>
-    <tr class="success">
-      <td>Place</td>
-      <td>UW campus, classroom TBD</td>
-    </tr>
-    <tr class="danger">
-      <td>Speaker</td>
-      <td>Xiaoyu Shi, Xiao Liang, Leon Liu</td>
-    </tr>
-    <tr class="warning">
-      <td>Topic</td>
-      <td>Want a job? Come and you'll never regret!</td>
-    </tr>
-    <tr class="active">
-      <td>Bounus</td>
-      <td>Stay tuned!</td>
-    </tr>
-  </tbody>
-</table> 
-</div>
-</div>
+<!-- content section --!>
+<br>
+
+	<div class="col-md-4 left">
+		<div class="alert alert-dismissable alert-warning">
+		<div class="card-image">
+		<a href="/校园行"><img src="{{ MEDIA_URL }}cards/CampusVisit_card.jpg"></a>
+		</div>
+<a href="https://www.coursera.org/course/datascitoolbox"><h3>包子培训校园行</h3></a>
+</p>『IT面试这点事儿』是包子培训联合华盛顿大学CSSA举办的系列求职讲座。我们根据北美IT行业招聘流程、同学们的求职现状，有针对性的讲解IT面试中的准备方式，常用技巧以及注意事项。<strong><font color="red">目前，我们第四期的校园行宣讲马上启动，欢迎关注我们的最新动态。</font></strong></p>
+		</div>
+	</div>
+	<div class="col-md-4 middle">
+		<div class="alert alert-dismissable alert-success">
+		<div class="card-image">
+		<a href="/mockinterview"><img src="{{ MEDIA_URL }}cards/MockInterview_card.jpg"></a>
+		</div>
+		<a href="https://www.coursera.org/course/datascitoolbox"><h3>『王牌服务』1对1模拟面试</h3></a>
+		</p>超值1对1模拟面试package。包子IT培训的模拟面试官均为北美顶尖IT公司的工程师，具备丰富的技术面试经验。<strong><font color="red">模拟面试中的题目和场景非常接近实战，让面试者提前感受和体会面试的氛围和节奏</font></strong>；面试后，我们提供详实的面试反馈和中肯的建议，帮助你找到不足之处。</p>
+		</div>
+	</div>
+	<div class="col-md-4 right">
+		<div class="alert alert-dismissable alert-info">
+		<div class="card-image">
+		<a href="https://www.coursera.org/course/datascitoolbox" class="coursera-front-to-course-link internal-home"><img src="{{ MEDIA_URL }}cards/Tutor_card.jpg"></a>
+		</div>
+		<a href="https://www.coursera.org/course/datascitoolbox" ><h3>『家教式』基础提高班</h3></a>
+		</p><strong><font color="red">针对基础偏弱的朋友，我们不认为短短几堂课就可以帮助你顺利拿到Top公司的Offer。</font></strong>所以，我们提供教学周期相对较长的家教式辅导：针对每一位学员的准备程度，定制课程，有的放矢。具体内容包括数据结构与算法、系统设计、真题讲解等。</p>
+		</div>
+	</div>
 </div>
 {% endblocktrans %}
 {% endblock %}
